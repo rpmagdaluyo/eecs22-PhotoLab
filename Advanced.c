@@ -344,7 +344,7 @@ IMAGE *Saturate(IMAGE *image, float percent){
             //get grayscale color
             tempR = (GetPixelR(image, x, y) + GetPixelG(image, x, y) + GetPixelB(image, x, y))/3;
             tempG = tempR;
-            tempB = tempB;
+            tempB = tempR;
 
             //find difference from original
             tempR = GetPixelR(image, x, y) - tempR;
