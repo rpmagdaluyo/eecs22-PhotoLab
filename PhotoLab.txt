@@ -1,0 +1,5 @@
+Much of the work I did in  this lab was figuring out how to convert our PhotoLab_v2 from HW3 to work with the dynamic data structures. The initial work mainly consisted of ensuring that the functions in Image.c worked well to make and delete images as well as access its members. The initial hurdle was understanding how to reference a specific pixel using the defined functions. Afterwards it was finding a way to modify the FileIO.c operations to properly load and save.
+
+Converting the provided solutions for DIPs.c and Advanced.c was fairly simple since most of it was replacing code for accessing and replacing data stored in the RGB challens with the new Setters and Getters functions. For the new operations it was a similar process to the last lab where it was simply understanding how to use the functions in Image.c to implement the defined algorithms.
+
+The last challenge was organizing how the files interacted with each other. This included updating the included header files for the .c files and adding Image.h into the dependencies of their respective target .o files in Makefile.
