@@ -1,4 +1,4 @@
-Script started on Sun 25 Nov 2018 01:30:42 AM PST
+Script started on Sun 25 Nov 2018 10:33:15 PM PST
 [rmagdalu@bondi hw4]$ make
 gcc -Wall -ansi -std=c99 -c Image.c -o Image.o
 gcc -Wall -ansi -std=c99 -c Test.c -o Test.o
@@ -106,12 +106,12 @@ Please make a choice.
 12: Test all functions
 13: Exit
 13
-[rmagdalu@bondi hw4]$ valgrind --leak-check=full PhotoLabTest [4h.[4l[4h/[4l
-==166419== Memcheck, a memory error detector
-==166419== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
-==166419== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
-==166419== Command: ./PhotoLabTest
-==166419== 
+[rmagdalu@bondi hw4]$ valgrind --leak-check-[K=full PhotoL[K[K[K[K[K[K./PhotoLabTest
+==59872== Memcheck, a memory error detector
+==59872== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==59872== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==59872== Command: ./PhotoLabTest
+==59872== 
 HSSOE.ppm was read.
 Image was successfully converted to black and white.
 bw.ppm was saved. 
@@ -156,15 +156,15 @@ HSSOE.ppm was read.
 Image saturation successfully modified to 90.00%
 saturate.ppm was saved. 
 saturate.jpg was stored.
-==166419== 
-==166419== HEAP SUMMARY:
-==166419==     in use at exit: 0 bytes in 0 blocks
-==166419==   total heap usage: 87 allocs, 87 frees, 12,433,072 bytes allocated
-==166419== 
-==166419== All heap blocks were freed -- no leaks are possible
-==166419== 
-==166419== For counts of detected and suppressed errors, rerun with: -v
-==166419== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)
+==59872== 
+==59872== HEAP SUMMARY:
+==59872==     in use at exit: 0 bytes in 0 blocks
+==59872==   total heap usage: 87 allocs, 87 frees, 12,433,072 bytes allocated
+==59872== 
+==59872== All heap blocks were freed -- no leaks are possible
+==59872== 
+==59872== For counts of detected and suppressed errors, rerun with: -v
+==59872== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)
 [rmagdalu@bondi hw4]$ make clean
 rm -f *.o *.a *.jpg bw.ppm edge.ppm shuffle.ppm brightness.ppm hmirror.ppm hue.ppm rotate.ppm hflip.ppm saturate.ppm smallresize.ppm bigresize.ppm 
 rm -f PhotoLab
@@ -172,4 +172,4 @@ rm -f PhotoLabTest
 [rmagdalu@bondi hw4]$ exit
 exit
 
-Script done on Sun 25 Nov 2018 01:31:50 AM PST
+Script done on Sun 25 Nov 2018 10:34:43 PM PST
